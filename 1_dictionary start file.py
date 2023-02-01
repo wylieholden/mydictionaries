@@ -4,8 +4,6 @@ import random
 phonebook = {}
 phonebook = {"Chris": "555−1111", "Katie": "555−2222", "Joanne": "555−3333"}
 
-""""
-
 
 print()
 print("*****  start section 1 - print dictionary ********")
@@ -13,6 +11,7 @@ print()
 
 mydictionary = dict(m=9, n=8)
 print(mydictionary)
+print(phonebook["Katie"])
 print(len(phonebook))
 print(type(phonebook))
 
@@ -21,7 +20,7 @@ print("*****  end section 1 ********")
 print()
 
 
-
+""""
 
 
 print()
@@ -156,7 +155,6 @@ print()
 print("*****  end section 8 ********")
 print()
 
-""" ""
 
 print()
 print("*****  start section 9 - using random and converting to list ********")
@@ -176,3 +174,5 @@ print(
 print()
 print("*****  end section 9 ********")
 print()
+
+"""

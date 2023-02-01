@@ -9,11 +9,14 @@ person["pets"] = {"dog": "Fido", "cat": "Sox"}  # dict within a dict
 # print(person)
 
 # print out the name of the second child
-print{person["children"[1]]}
+print(person["children"][1])
 
 # print out the name of the cat
+print(person["pets"]["dog"])
 
 # iterate through all children and print out each child
+for key in person:
+    print(person["children"])
 
 # print out the pets in this format:
 # type of pet: dog name of pet: Fido
