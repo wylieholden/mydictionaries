@@ -13,15 +13,12 @@ print()
 eq_dict = {}
 for earthquake in earthquakes["features"]:
     if (earthquake["properties"]["mag"]) > 6:
-        eq_dict.update(
-            {
-                ((earthquake["properties"]["place"])): {
-                    "magnitude": ((earthquake["properties"]["mag"])),
-                    "longitude": ((earthquake["geometry"]["coordinates"][0])),
-                    "latitude": ((earthquake["geometry"]["coordinates"][1])),
-                }
-            }
-        )
+
+        eq_dict[earthquake["properties"]["place"]] = {
+            "magnitude": ((earthquake["properties"]["mag"])),
+            "longitude": ((earthquake["geometry"]["coordinates"][0])),
+            "latitude": ((earthquake["geometry"]["coordinates"][1])),
+        }
 
 
 print(eq_dict)
